@@ -40,6 +40,7 @@
     <addaction name="actionCreatePyramids"/>
     <addaction name="actionSieveFilter"/>
     <addaction name="actionContour"/>
+    <addaction name="actionImageAnticolor"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -83,6 +84,11 @@
   <action name="actionContour">
    <property name="text">
     <string>等高线</string>
+   </property>
+  </action>
+  <action name="actionImageAnticolor">
+   <property name="text">
+    <string>图像反色</string>
    </property>
   </action>
  </widget>

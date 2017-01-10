@@ -6,6 +6,7 @@
 #include "imagepyramidsdlg.h"
 #include "sievefilterdlg.h"
 #include "createcontourdlg.h"
+#include "imageanticolordlg.h"
 namespace Ui {
 class MainWindow;
 }
@@ -24,7 +25,9 @@ private:
     ImagePyramidsDlg* imagegDlg;
     SieveFilterDlg* sieveDlg;
     CreateContourDlg* contourDlg;
-public slots:
+    ImageAnticolorDlg* imageAnticolorDlg;
+
+private slots:
     void slotsOpen();
     void slotsSave();
     void slotsSaveAs();
@@ -33,6 +36,8 @@ public slots:
     void slotsCreatePyramids();
     void slotsSieveFilter();
     void slotsContour();
+    void slotsImageAnticolor();
+
 };
 
 #endif // MAINWINDOW_H

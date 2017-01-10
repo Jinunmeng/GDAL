@@ -63,7 +63,6 @@ void CreateContourDlg::slotsApply()
     DEM2Contour2(pszSrcFile.toStdString().c_str(),pszDstFile.toStdString().c_str(),
                 1, 100.0, "ESRI Shapefile", pProcess);
 
-
     delete pProcess;
 
 }

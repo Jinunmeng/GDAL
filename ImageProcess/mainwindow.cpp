@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->actionCreatePyramids, &QAction::triggered, this, &MainWindow::slotsCreatePyramids);
     QObject::connect(ui->actionSieveFilter, &QAction::triggered, this, &MainWindow::slotsSieveFilter);
     QObject::connect(ui->actionContour, &QAction::triggered, this, &MainWindow::slotsContour);
+    QObject::connect(ui->actionImageAnticolor, &QAction::triggered, this, &MainWindow::slotsImageAnticolor);
 
 }
 
@@ -68,9 +69,14 @@ void MainWindow::slotsSieveFilter()
     sieveDlg = new SieveFilterDlg(this);
     sieveDlg->show();
 }
- void MainWindow::slotsContour()
- {
-     contourDlg = new CreateContourDlg(this);
-     contourDlg->show();
- }
+void MainWindow::slotsContour()
+{
+    contourDlg = new CreateContourDlg(this);
+    contourDlg->show();
+}
 
+void MainWindow::slotsImageAnticolor()
+{
+    imageAnticolorDlg = new ImageAnticolorDlg(this);
+    imageAnticolorDlg->show();
+}
