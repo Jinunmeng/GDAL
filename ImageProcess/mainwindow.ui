@@ -42,8 +42,15 @@
     <addaction name="actionContour"/>
     <addaction name="actionImageAnticolor"/>
    </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>实例</string>
+    </property>
+    <addaction name="actionImageResample"/>
+   </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
@@ -89,6 +96,11 @@
   <action name="actionImageAnticolor">
    <property name="text">
     <string>图像反色</string>
+   </property>
+  </action>
+  <action name="actionImageResample">
+   <property name="text">
+    <string>图像重采样</string>
    </property>
   </action>
  </widget>

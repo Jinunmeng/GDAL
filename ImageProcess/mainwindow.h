@@ -7,6 +7,7 @@
 #include "sievefilterdlg.h"
 #include "createcontourdlg.h"
 #include "imageanticolordlg.h"
+#include "imageresampledlg.h"
 namespace Ui {
 class MainWindow;
 }
@@ -26,6 +27,8 @@ private:
     SieveFilterDlg* sieveDlg;
     CreateContourDlg* contourDlg;
     ImageAnticolorDlg* imageAnticolorDlg;
+    ImageResampleDlg* imageResampleDlg;
+
 
 private slots:
     void slotsOpen();
@@ -37,7 +40,7 @@ private slots:
     void slotsSieveFilter();
     void slotsContour();
     void slotsImageAnticolor();
-
+    void slotsImageResample();
 };
 
 #endif // MAINWINDOW_H

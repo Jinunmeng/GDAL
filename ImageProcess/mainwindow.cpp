@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->actionSieveFilter, &QAction::triggered, this, &MainWindow::slotsSieveFilter);
     QObject::connect(ui->actionContour, &QAction::triggered, this, &MainWindow::slotsContour);
     QObject::connect(ui->actionImageAnticolor, &QAction::triggered, this, &MainWindow::slotsImageAnticolor);
-
+    QObject::connect(ui->actionImageResample, &QAction::triggered, this, &MainWindow::slotsImageResample);
 }
 
 MainWindow::~MainWindow()
@@ -79,4 +79,10 @@ void MainWindow::slotsImageAnticolor()
 {
     imageAnticolorDlg = new ImageAnticolorDlg(this);
     imageAnticolorDlg->show();
+}
+
+void MainWindow::slotsImageResample()
+{
+    imageResampleDlg = new ImageResampleDlg(this);
+    imageResampleDlg->show();
 }

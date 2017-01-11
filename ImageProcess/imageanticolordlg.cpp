@@ -116,9 +116,9 @@ int ImageAnticolorDlg::ImageAnticolor(const char *pszSrcFile, const char *pszDst
         GDALRasterBand* poDstBand = poDstDS->GetRasterBand(iBand);
         for(int i = 0; i < iYSize; i++)//循环图像的高
         {
-
+            //一行一行的读取数据
             poSrcBand->RasterIO(GF_Read, 0, i, iXSize, 1, pSrcData, iXSize, 1, GDT_Byte, 0, 0);
-            for(int j = 0; j < iXSize; j++ )
+            for(int j = 0; j < iXSize; j++ ) //循环每一行
             {
                 pDstData[j] = 255 - pSrcData[j];
             }
@@ -137,7 +137,6 @@ int ImageAnticolorDlg::ImageAnticolor(const char *pszSrcFile, const char *pszDst
                 }
             }
         }
-
     }
 
     delete pSrcData;

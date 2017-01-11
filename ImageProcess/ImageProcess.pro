@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     imagepyramidsdlg.cpp \
     sievefilterdlg.cpp \
     createcontourdlg.cpp \
-    imageanticolordlg.cpp
+    imageanticolordlg.cpp \
+    imageresampledlg.cpp
 
 HEADERS  += mainwindow.h \
     progressbase.h \
@@ -28,14 +29,16 @@ HEADERS  += mainwindow.h \
     imagepyramidsdlg.h \
     sievefilterdlg.h \
     createcontourdlg.h \
-    imageanticolordlg.h
+    imageanticolordlg.h \
+    imageresampledlg.h
 
 FORMS    += mainwindow.ui \
     cpolygonizedlg.ui \
     imagepyramidsdlg.ui \
     sievefilterdlg.ui \
     createcontourdlg.ui \
-    imageanticolordlg.ui
+    imageanticolordlg.ui \
+    imageresampledlg.ui
 win32: LIBS += -LF:/GDAL-Qt/lib/ -lgdal_i
 
 INCLUDEPATH += F:/GDAL-Qt/include
