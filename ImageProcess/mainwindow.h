@@ -8,6 +8,7 @@
 #include "createcontourdlg.h"
 #include "imageanticolordlg.h"
 #include "imageresampledlg.h"
+#include "imagecutdlg.h"
 namespace Ui {
 class MainWindow;
 }
@@ -28,6 +29,7 @@ private:
     CreateContourDlg* contourDlg;
     ImageAnticolorDlg* imageAnticolorDlg;
     ImageResampleDlg* imageResampleDlg;
+    ImageCutDlg* imageCutDlg;
 
 
 private slots:
@@ -41,6 +43,7 @@ private slots:
     void slotsContour();
     void slotsImageAnticolor();
     void slotsImageResample();
+    void slotsImageCut();
 };
 
 #endif // MAINWINDOW_H

@@ -47,6 +47,7 @@
      <string>实例</string>
     </property>
     <addaction name="actionImageResample"/>
+    <addaction name="actionImageCut"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -101,6 +102,11 @@
   <action name="actionImageResample">
    <property name="text">
     <string>图像重采样</string>
+   </property>
+  </action>
+  <action name="actionImageCut">
+   <property name="text">
+    <string>图像裁剪</string>
    </property>
   </action>
  </widget>

@@ -19,6 +19,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->actionContour, &QAction::triggered, this, &MainWindow::slotsContour);
     QObject::connect(ui->actionImageAnticolor, &QAction::triggered, this, &MainWindow::slotsImageAnticolor);
     QObject::connect(ui->actionImageResample, &QAction::triggered, this, &MainWindow::slotsImageResample);
+    QObject::connect(ui->actionImageCut, &QAction::triggered, this, &MainWindow::slotsImageCut);
+
+
+
 }
 
 MainWindow::~MainWindow()
@@ -85,4 +89,9 @@ void MainWindow::slotsImageResample()
 {
     imageResampleDlg = new ImageResampleDlg(this);
     imageResampleDlg->show();
+}
+void MainWindow::slotsImageCut()
+{
+    imageCutDlg = new ImageCutDlg(this);
+    imageCutDlg->show();
 }
