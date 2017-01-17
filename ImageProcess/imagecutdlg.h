@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "cprogressdlg.h"
+#include "ogr_geometry.h"
 namespace Ui {
 class ImageCutDlg;
 }
@@ -22,11 +23,16 @@ private:
     void ImageCutRasterIO(const char* pszSrcFile, const char* pszDstFile,
                           int iStartX, int iStartY, int iSizeX, int iSizeY,
                           const char* pszFormat, CProgressBase* pProgress = NULL);
+
+    void ImageCutWarp(const char* pszSrcFile, const char* pszDstFile,const char* pszAOIWKT,
+                      const char* pszFormat, CProgressBase* pProgress = NULL);
+
 private slots:
     void slotsInput();
     void slotsInputRoi();
     void slotsOutput();
     void slotsImageCutRasterIO();
+    void slotsImageCutWarp();
 };
 
 #endif // IMAGECUTDLG_H
