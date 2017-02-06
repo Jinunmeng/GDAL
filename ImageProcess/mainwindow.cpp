@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->actionImageAnticolor, &QAction::triggered, this, &MainWindow::slotsImageAnticolor);
     QObject::connect(ui->actionImageResample, &QAction::triggered, this, &MainWindow::slotsImageResample);
     QObject::connect(ui->actionImageCut, &QAction::triggered, this, &MainWindow::slotsImageCut);
+    QObject::connect(ui->actionCreateImageThumb, &QAction::triggered, this, &MainWindow::slotsCreateImageThumb);
 
 
 
@@ -94,4 +95,9 @@ void MainWindow::slotsImageCut()
 {
     imageCutDlg = new ImageCutDlg(this);
     imageCutDlg->show();
+}
+void MainWindow::slotsCreateImageThumb()
+{
+    createImageThumb = new CreateImageThumbDlg(this);
+    createImageThumb->show();
 }

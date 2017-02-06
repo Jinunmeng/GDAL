@@ -9,6 +9,7 @@
 #include "imageanticolordlg.h"
 #include "imageresampledlg.h"
 #include "imagecutdlg.h"
+#include "createimagethumbdlg.h"
 namespace Ui {
 class MainWindow;
 }
@@ -30,6 +31,8 @@ private:
     ImageAnticolorDlg* imageAnticolorDlg;
     ImageResampleDlg* imageResampleDlg;
     ImageCutDlg* imageCutDlg;
+    CreateImageThumbDlg* createImageThumb;
+
 
 
 private slots:
@@ -44,6 +47,7 @@ private slots:
     void slotsImageAnticolor();
     void slotsImageResample();
     void slotsImageCut();
+    void slotsCreateImageThumb();
 };
 
 #endif // MAINWINDOW_H

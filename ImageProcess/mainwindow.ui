@@ -48,6 +48,7 @@
     </property>
     <addaction name="actionImageResample"/>
     <addaction name="actionImageCut"/>
+    <addaction name="actionCreateImageThumb"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -107,6 +108,11 @@
   <action name="actionImageCut">
    <property name="text">
     <string>图像裁剪</string>
+   </property>
+  </action>
+  <action name="actionCreateImageThumb">
+   <property name="text">
+    <string>创建缩略图</string>
    </property>
   </action>
  </widget>
